@@ -18,26 +18,26 @@
         <nav class="relative z-50 h-24 select-none" x-data="{ showMenu: false }">
             <div class="container flex overflow-hidden relative flex-wrap justify-between items-center mx-auto h-24 font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0">
                 <div class="flex justify-start items-center pr-4 w-1/4 h-full">
-                    <a href="/" class="flex items-center py-4 space-x-2 font-extrabold text-gray-900 md:py-0">
+                    <a href="/" @click="showMenu = !showMenu" class="flex items-center py-4 space-x-2 font-extrabold text-gray-900 md:py-0">
                         <img class="h-12" src="/images/logo.svg" alt="Logo" />
                         <span class="leading-none text-3xl">MYHUB</span>
                     </a>
                 </div>
                 <div class="hidden top-0 left-0 items-start p-4 w-full h-full text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 md:absolute lg:text-base md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex fixed': showMenu, 'hidden': !showMenu }">
                     <div class="overflow-hidden flex-col w-full h-auto bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
-                        <a href="/en.html" class="block inline-flex items-center px-6 w-auto h-16 text-xl font-black leading-none text-gray-900 md:hidden">
+                        <a href="/en.html" @click="showMenu = !showMenu" class="block inline-flex items-center px-6 w-auto h-16 text-xl font-black leading-none text-gray-900 md:hidden">
                             <img class="w-10 mr-1" src="/images/logo.svg" alt="MYHUB" /> <span class="leading-none text-3xl">MYHUB</span>
                         </a>
                         <div class="flex flex-col justify-center items-start space-x-6 w-full text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center">
                             <a href="/en.html" class="inline-block py-2 mx-0 ml-6 w-full font-medium text-left text-black md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center">Home</a>
-                            <a href="#Technologies" class="inline-block py-2 mx-0 w-full font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Technologies</a>
-                            <a href="#Services" class="inline-block py-2 mx-0 w-full font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Services</a>
-                            <a href="#Contacts" class="inline-block py-2 mx-0 w-full font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Contacts</a>
+                            <a href="#Technologies" @click="showMenu = !showMenu" class="inline-block py-2 mx-0 w-full font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Technologies</a>
+                            <a href="#Services" @click="showMenu = !showMenu" class="inline-block py-2 mx-0 w-full font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Services</a>
+                            <a href="#Contacts" @click="showMenu = !showMenu" class="inline-block py-2 mx-0 w-full font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center">Contacts</a>
                             
                         </div>
                         <div class="flex flex-col justify-end items-start pt-4 w-full md:items-center md:w-1/3 md:flex-row md:py-0">
-                            <a href="/" class="inline-flex items-center px-5 px-6 py-3 w-full text-sm font-medium leading-4 text-white bg-gray-900 md:w-auto md:rounded-full hover:bg-gray-800 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-gray-800">Ru</a>
-                            <a href="/en.html" class="px-6 py-2 mr-0 w-full text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto">En</a>
+                            <a href="/" @click="showMenu = !showMenu" class="inline-flex items-center px-5 px-6 py-3 w-full text-sm font-medium leading-4 text-white bg-gray-900 md:w-auto md:rounded-full hover:bg-gray-800 focus:outline-none md:focus:ring-2 focus:ring-0 focus:ring-offset-2 focus:ring-gray-800">Ru</a>
+                            <a href="/en.html" @click="showMenu = !showMenu" class="px-6 py-2 mr-0 w-full text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto">En</a>
                         </div>
                     </div>
                 </div>
